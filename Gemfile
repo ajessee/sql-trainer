@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '5.0'
+gem 'rails', '5.1'
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 gem 'pg', '~> 0.18'
 gem 'slim-rails'
 gem 'codemirror-rails'
+gem 'listen'
 
 group :development, :test do
   gem 'dotenv-rails'
@@ -16,6 +17,6 @@ group :development, :test do
   gem 'powder'
   # gem 'pry-byebug'
   gem 'rspec-rails'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 3.5.1'
   gem 'spring', '~> 1.6.3'
 end
