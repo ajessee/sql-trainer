@@ -27,3 +27,5 @@ production:
   database: sql_tutorial_upgrade_production
   username: sql_tutorial_upgrade
   password: <%= ENV['SQL_TUTORIAL_UPGRADE_DATABASE_PASSWORD'] %>
+  pool: 5
+  timeout: 5000
