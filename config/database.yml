@@ -16,3 +16,9 @@ development:
 
 test:
   <<: *defaults
+
+production:
+  <<: *default
+  database: sql_tutorial_upgrade_production
+  username: sql_tutorial_upgrade
+  password: <%= ENV['SQL_TUTORIAL_UPGRADE_DATABASE_PASSWORD'] %>
