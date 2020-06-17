@@ -6,6 +6,9 @@ module TableInfo
   def schema_for(table_name)
     metadata = {table_name: table_name}
     
+    if Rails.env.production?
+      DB.reconnect!
+    end
     DB.transaction do
       metadata[:fields] = DB.execute("SELECT * FROM #{table_name} WHERE false").fields
       raise ActiveRecord::Rollback
