@@ -21,7 +21,3 @@ group :development, :test do
   gem 'web-console'
   gem 'spring'
 end
-
-group :production do
-   gem 'thin'
-end
