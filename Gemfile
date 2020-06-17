@@ -9,6 +9,7 @@ gem 'slim-rails'
 gem 'codemirror-rails'
 gem 'listen'
 gem 'uglifier'
+gem 'puma'
 
 group :development, :test do
   gem 'dotenv-rails'
