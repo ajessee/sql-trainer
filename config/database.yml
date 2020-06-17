@@ -24,8 +24,5 @@ test:
 
 production:
   <<: *default
-  database: sql_tutorial_upgrade_production
-  username: sql_tutorial_upgrade
-  password: <%= ENV['SQL_TUTORIAL_UPGRADE_DATABASE_PASSWORD'] %>
-  pool: 5
-  timeout: 5000
+  url:  <%= ENV["DATABASE_URL"] %>
+  pool: <%= ENV["DB_POOL"] || ENV['RAILS_MAX_THREADS'] || 5 %>
