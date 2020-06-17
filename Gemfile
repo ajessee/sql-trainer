@@ -8,7 +8,6 @@ gem 'pg', '~> 0.18'
 gem 'slim-rails'
 gem 'codemirror-rails'
 gem 'listen'
-gem 'bootsnap'
 
 group :development, :test do
   gem 'dotenv-rails'
