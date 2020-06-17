@@ -1,16 +1,16 @@
 module TableInfo
   extend self
 
-  DB = ActiveRecord::Base.connection
+  @@DB = ActiveRecord::Base.connection
 
   def schema_for(table_name)
     metadata = {table_name: table_name}
     
     if Rails.env.production?
-      DB.reconnect!
+      @@DB.reconnect!
     end
-    DB.transaction do
-      metadata[:fields] = DB.execute("SELECT * FROM #{table_name} WHERE false").fields
+    @@DB.transaction do
+      metadata[:fields] = @@DB.execute("SELECT * FROM #{table_name} WHERE false").fields
       raise ActiveRecord::Rollback
     end
 
