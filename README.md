@@ -1,15 +1,12 @@
 
-# Sql Tutor
+# [Sql Tutor](https://sql-tutor-upgrade.herokuapp.com/)
 
 An app designed to allow students to practice and level up their SQL queries. 
 
 ### Update 2020
 
-I've forked and updated [audibleblink](https://github.com/audibleblink)'s original app that he built 5 years ago.
-All credit to him (Hey Alex! Thanks being an awesome teacher at DevBootCamp!)
+I've forked and updated [audibleblink](https://github.com/audibleblink)'s original app that he built 5 years ago when he was my teacher at DevBootCamp. All credit to him for the awesome code. <br />
 I've upgraded it to Rails 5.2 (Rails 6 was a bridge too far at this point), and deployed it to Heroku for all to use.
-
-## [sql-tutor-upgrade](https://sql-tutor-upgrade.herokuapp.com/)
 
 ![Imgur](http://i.imgur.com/xLP2omw.png)
 
