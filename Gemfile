@@ -10,6 +10,9 @@ gem 'codemirror-rails'
 gem 'listen'
 gem 'uglifier'
 gem 'puma'
+gem 'coderay' #optional for Syntax Highlighting
+gem 'redcarpet'
+gem 'emd'
 
 group :development, :test do
   gem 'dotenv-rails'

@@ -28,3 +28,7 @@ form > .CodeMirror {
   font-size: 120%;
   border-radius: 3px;
 }
+
+.btn-small {
+  font-size: 0.5em;
+}

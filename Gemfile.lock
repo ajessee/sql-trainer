@@ -57,6 +57,8 @@ GEM
     dotenv-rails (2.7.5)
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
+    emd (0.5.0)
+      redcarpet (= 3.4.0)
     erubi (1.9.0)
     execjs (2.7.0)
     factory_girl (4.9.0)
@@ -130,6 +132,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redcarpet (3.4.0)
     rspec-core (3.9.2)
       rspec-support (~> 3.9.3)
     rspec-expectations (3.9.2)
@@ -195,8 +198,10 @@ PLATFORMS
 DEPENDENCIES
   byebug
   codemirror-rails
+  coderay
   database_cleaner
   dotenv-rails
+  emd
   factory_girl
   jquery-rails
   listen
@@ -205,6 +210,7 @@ DEPENDENCIES
   pry-byebug
   puma
   rails (= 5.2)
+  redcarpet
   rspec-rails
   sass-rails
   slim-rails

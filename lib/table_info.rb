@@ -1,9 +1,7 @@
 module TableInfo
   extend self
 
-  if Rails.env.development?
-    DB = ActiveRecord::Base.connection
-  end
+  DB = ActiveRecord::Base.connection
   
   def schema_for(table_name)
     
